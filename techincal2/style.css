@@ -1,0 +1,90 @@
+.button {
+    padding: 10px 15px;
+    color: black;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;    
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0px 0px 200px; 
+    width: 150px;
+    transition: all 0.2s ease; 
+    margin-right: auto;
+}
+
+.button:hover {
+    color: black; 
+    transform: scale(1.1); 
+}
+
+.button:active {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 5px;
+    transition: all 0.2s ease; 
+}
+
+.monday {
+    margin-top: 100px;
+    background-color: #9c27b0; 
+}
+
+.tuesday {
+    background-color: pink; 
+}
+
+.wednesday {
+    background-color: blue; 
+}
+
+.thursday {
+    background-color: rgb(8, 180, 8); 
+}
+
+.friday {
+    background-color: yellow; 
+}
+
+.saturday {
+    background-color: orange; 
+}
+
+.sunday {
+    background-color: red; 
+}
+
+.container {
+    display: flex; 
+}
+
+.weekdays {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.box-container {
+    position: absolute; 
+    right: 1000px; 
+    top: 0px; 
+}
+
+.square-box {
+    width: 500px; 
+    height: 500px; 
+    background-color: #9c27b0;
+    border: 10px solid #ccc;
+    transition: all 1.5s ease-in-out, background-color 2s ease-in-out, border 1.5s ease-in-out; 
+    position: absolute;
+    top: -550px; 
+}
+
+.square-box.outline {
+    background-color: transparent; 
+    border-color: #ccc;
+    transition: background-color 2s ease-in-out;
+}
